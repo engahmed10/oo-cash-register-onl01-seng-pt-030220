@@ -4,7 +4,6 @@ class CashRegister
    attr_accessor :total ,:lasttr
    attr_reader   :discount,:items
 
-
     def initialize(discount=0)
       @total=0
       @discount=discount
@@ -19,6 +18,7 @@ class CashRegister
            items << title
          end
       self.lasttr = price *quantity
+      binding.pry
     end
 
     def apply_discount
