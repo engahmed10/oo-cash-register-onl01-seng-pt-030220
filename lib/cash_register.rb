@@ -18,7 +18,7 @@ class CashRegister
            items << title
          end
       self.lasttr = price *quantity
-      binding.pry
+      #binding.pry
     end
 
     def apply_discount
